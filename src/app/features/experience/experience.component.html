@@ -11,61 +11,35 @@
     </div>
 
     <div class="space-y-0 border-t border-l border-r border-gray-200 dark:border-gray-800">
-      
-      <div class="group border-b border-gray-200 dark:border-gray-800 p-8 md:p-12 transition-all duration-500 hover:bg-gray-50 dark:hover:bg-[#111111]">
+  
+      <div *ngFor="let item of items" class="group border-b border-gray-200 dark:border-gray-800 p-8 md:p-12 transition-all duration-500 hover:bg-gray-50 dark:hover:bg-[#111111]">
         <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
           
           <div class="md:w-1/3">
             <span class="text-[11px] font-bold uppercase tracking-[0.3em] text-gray-400 dark:text-gray-500">
-              2024 — Presente
+              {{ item.period }}
             </span>
             <h3 class="mt-2 text-lg font-semibold uppercase tracking-wider text-gray-900 dark:text-white">
-              Senior Developer
+              {{ item.role }}
             </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Nombre de la Empresa</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">{{ item.company }}</p>
           </div>
-
+    
           <div class="md:w-2/3">
             <p class="text-base leading-relaxed text-gray-600 dark:text-gray-400 md:text-lg">
-              Liderazgo técnico en el desarrollo de arquitecturas escalables utilizando Angular y Spring Boot. Optimización de procesos CI/CD y mentoría a desarrolladores junior.
+              {{ item.summary }}
             </p>
+            
             <div class="mt-6 flex flex-wrap gap-3">
-              <span class="px-3 py-1 border border-gray-200 dark:border-gray-700 text-[9px] uppercase tracking-widest text-gray-500">Angular</span>
-              <span class="px-3 py-1 border border-gray-200 dark:border-gray-700 text-[9px] uppercase tracking-widest text-gray-500">Java</span>
-              <span class="px-3 py-1 border border-gray-200 dark:border-gray-700 text-[9px] uppercase tracking-widest text-gray-500">Cloud</span>
+              <span *ngFor="let tag of item.tags" class="px-3 py-1 border border-gray-200 dark:border-gray-700 text-[9px] uppercase tracking-widest text-gray-500 dark:text-gray-400">
+                {{ tag }}
+              </span>
             </div>
           </div>
-
+    
         </div>
       </div>
-
-      <div class="group border-b border-gray-200 dark:border-gray-800 p-8 md:p-12 transition-all duration-500 hover:bg-gray-50 dark:hover:bg-[#111111]">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
-          
-          <div class="md:w-1/3">
-            <span class="text-[11px] font-bold uppercase tracking-[0.3em] text-gray-400 dark:text-gray-500">
-              2024 — Presente
-            </span>
-            <h3 class="mt-2 text-lg font-semibold uppercase tracking-wider text-gray-900 dark:text-white">
-              Senior Developer
-            </h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Nombre de la Empresa</p>
-          </div>
-
-          <div class="md:w-2/3">
-            <p class="text-base leading-relaxed text-gray-600 dark:text-gray-400 md:text-lg">
-              Liderazgo técnico en el desarrollo de arquitecturas escalables utilizando Angular y Spring Boot. Optimización de procesos CI/CD y mentoría a desarrolladores junior.
-            </p>
-            <div class="mt-6 flex flex-wrap gap-3">
-              <span class="px-3 py-1 border border-gray-200 dark:border-gray-700 text-[9px] uppercase tracking-widest text-gray-500">Angular</span>
-              <span class="px-3 py-1 border border-gray-200 dark:border-gray-700 text-[9px] uppercase tracking-widest text-gray-500">Java</span>
-              <span class="px-3 py-1 border border-gray-200 dark:border-gray-700 text-[9px] uppercase tracking-widest text-gray-500">Cloud</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      </div>
+    
+    </div>
   </div>
 </section>

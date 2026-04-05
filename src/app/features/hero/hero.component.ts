@@ -9,7 +9,7 @@ export class HeroComponent {
   readonly meta = 'PORTAFOLIO 2026';
   readonly signature = '+J / ROSE';
   readonly title = 'ANTHONY ESPINO';
-  readonly subtitle = 'Desarrollador Full Stack enfocado en diseño funcional';
+  readonly subtitle = 'Full Stack Developer | Angular, Java, Spring Boot & Oracle';
 
   scrollTo(id: string): void {
     const el = document.getElementById(id);

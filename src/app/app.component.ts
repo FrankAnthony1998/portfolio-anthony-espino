@@ -9,6 +9,6 @@ export class AppComponent {
   showHeader = true;
   showHero = true;
   showProjects = true;
-  showExperience = true;
+  showExperience = false;
   showContact = true;
 }
