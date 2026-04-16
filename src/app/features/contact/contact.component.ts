@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   readonly email = 'skate_lp11@hotmail.com';
-  readonly githubUrl = 'https://github.com';
-  readonly linkedinUrl = 'https://linkedin.com';
+  readonly githubUrl = 'https://github.com/FrankAnthony1998';
+  readonly linkedinUrl = 'https://www.linkedin.com/in/anthony-espino-a87654299/';
   readonly year = new Date().getFullYear();
 }
 

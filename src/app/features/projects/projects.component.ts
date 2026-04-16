@@ -14,10 +14,10 @@ type Project = {
 })
 export class ProjectsComponent {
   readonly projects: Project[] = [
-    { title: 'Sistema ERP Empresarial', role: 'Full Stack', year: '2026', href: '#' },
-    { title: 'API REST', role: 'Frontend', year: '2025', href: '#' },
-    { title: 'API & Auth', role: 'Backend', year: '2025', href: '#' },
-    { title: 'UI System', role: 'Design + Dev', year: '2024', href: '#' },
+    { title: 'DEMO E-COMMERCE', role: 'Full Stack', year: '2026', href: 'https://demo-ecommerce-next.netlify.app/' },
+    { title: 'API REST', role: 'Frontend', year: '2025', href: '' },
+    { title: 'Proximamente...', role: 'Proximamente...', year: '2025', href: '' },
+    { title: 'Proximamente...', role: 'Proximamente...', year: '2024', href: '' },
   ];
 }
 
