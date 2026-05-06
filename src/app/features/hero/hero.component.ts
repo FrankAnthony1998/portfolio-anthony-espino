@@ -10,7 +10,7 @@ export class HeroComponent implements OnInit {
   readonly title = 'ANTHONY ESPINO';
   // readonly subtitle = 'Full Stack Developer | Angular, Java, Spring Boot & Oracle';
   readonly description =
-    'Desarrollo aplicaciones web conectando frontend y backend con APIs REST, manejo de bases de datos Oracle y seguridad con JWT. Experiencia con Java, Angular y entornos empresariales.';
+    'Desarrollador web enfocado en la creación de landing pages, sitios web y e-commerce optimizados para rendimiento, experiencia de usuario y conversión. Construyo soluciones modernas, rápidas y pensadas para ayudar a negocios a conseguir resultados online.';
 
   typedTitle = '';
   private index = 0;
